@@ -1,0 +1,68 @@
+.nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 4rem);
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: min(2.5vh, 1.25rem) 0;
+    color: white;
+}
+
+.nav-logo {
+    font-family: Outfit;
+    font-size: min(2.625rem, 3vw);
+    font-weight: 500;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-size: min(1.125rem, 1.25vw);
+    gap: min(5.625rem, 6vw);
+}
+
+.nav-contact {
+    border-radius: 3.125rem;
+    padding: min(0.625rem, 1vh) min(2.375rem, 2.5vw);
+    background: #fff;
+    color: #262626;
+}
+
+/* Prevent scrolling */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .hero {
+        top: 40vh;
+    }
+
+    .nav-menu {
+        gap: min(2rem, 4vw);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-menu {
+        display: none; /* Or implement a mobile menu */
+    }
+
+    .hero {
+        top: 35vh;
+    }
+
+    .hero-text {
+        line-height: 1.1;
+    }
+}

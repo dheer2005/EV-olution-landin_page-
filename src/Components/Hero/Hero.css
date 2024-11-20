@@ -1,0 +1,73 @@
+.hero {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 4rem);
+    max-width: 1440px;
+    top: 45vh; /* Adjusted from fixed margin-top */
+    transform: translate(-50%, -50%); /* Centers vertically and horizontally */
+}
+
+.hero-text {
+    color: #FFF;
+    font-size: min(6.875rem, 8vw);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.hero-explore {
+    display: flex;
+    align-items: center;
+    gap: min(3.125rem, 4vw);
+    width: fit-content;
+    margin-top: min(4.375rem, 5vh);
+    padding: 0.3125rem 0.5rem;
+    padding-left: min(1.875rem, 2vw);
+    border-radius: 3.75rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.hero-explore p {
+    color: #292929;
+    font-size: min(1.25rem, 1.5vw);
+    font-weight: 500;
+}
+
+.hero-dot-play {
+    position: absolute;
+    bottom: min(-15vh, -120px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-dots {
+    display: flex;
+    align-items: center;
+    gap: min(1.4375rem, 1.5vw);
+    list-style: none;
+}
+
+.hero-dot {
+    width: min(0.9375rem, 1vw);
+    height: min(0.9375rem, 1vw);
+    background: #FFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hero-dot.orange {
+    background: orangered;
+}
+
+.hero-play {
+    display: flex;
+    align-items: center;
+    gap: min(1.875rem, 2vw);
+}
+
+.hero-play p {
+    color: #FFF;
+    font-size: min(1.1875rem, 1.25vw);
+}
